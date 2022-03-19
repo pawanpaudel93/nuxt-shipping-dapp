@@ -52,8 +52,7 @@ contract Shipping {
         // Check the current status and return the correct name
         if (ShippingStatus.Pending == _status) return 'Pending';
         if (ShippingStatus.Shipped == _status) return 'Shipped';
-        if (ShippingStatus.Delivered == _status) return 'Delivered';
-        return 'Unknown';
+        return 'Delivered';
     }
 
     // Get status of your shipped item
